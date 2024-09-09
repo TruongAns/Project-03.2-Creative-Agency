@@ -13,19 +13,23 @@ body {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: Poppins, sans-serif;
+
 }
 
 /* Common */
 .container {
     width: 1140px;
     margin: 0 auto;
+    height: 100%;
 }
 
 :root {
     --text-color-back-gray: #575D5E;
     --primary-color-black-green: #143C3C;
     --text-color-white: #FFF;
-    --primary-color-black: #152427
+    --primary-color-black: #152427;
+    --Scondery-color-light-green: #E2EDDF
 }
 
 a {
@@ -274,4 +278,70 @@ a {
     position: absolute;
     bottom: 29px;
     right: -42px;
+}
+
+/* =================================================== section-logo-wrap =================================================== */
+.section-logo {
+    margin-top: 42px;
+}
+
+.section-logo-wrap {
+
+
+    border-radius: 100.5px;
+    background: var(--Scondery-color-light-green);
+    padding: 78px 0;
+}
+
+.section-logo-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 879px;
+    margin: 0 auto;
+}
+
+.logo__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.logo__item:nth-of-type(2) {
+    column-gap: 3px;
+}
+
+.logo__title--google {
+    color: var(--primary-color-black-green);
+    font-size: 31px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.logo__title--slack {
+    color: var(--primary-color-black-green);
+    font-size: 3.2rem;
+    font-weight: 600;
+}
+
+.logo__title--agworld {
+    color: #163C35;
+    font-size: 2.6rem;
+    font-weight: 400;
+}
+
+.logo__title--riotinto {
+    color: var(--primary-color-black-green);
+    font-family: "Sonsie One";
+    font-size: 2.3rem;
+    font-weight: 400;
+}
+
+.logo__title--heroku {
+    color: var(--primary-color-black-green);
+    font-size: 1.9rem;
+    font-weight: 600;
+    letter-spacing: 1.995px;
 }
