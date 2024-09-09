@@ -1,0 +1,122 @@
+/*  font-family: "Poppins", sans-serif; */
+/*   font-family: "Public Sans", sans-serif; */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    height: 10000px;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Common */
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+:root {
+    --text-color-back-gray: #575D5E;
+    --primary-color-black-green: #143C3C;
+    --text-color-white: #FFF;
+    --primary-color-black: #152427
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    min-width: 173px;
+    height: 57px;
+    background: var(--primary-color-black-green);
+    border-radius: 99px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--primary-color-black-green);
+
+    /* Paragraph/h2 18px medium */
+    color: var(--text-color-white);
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.55;
+    /* 155.556% */
+    transition: 0.25s;
+}
+
+.btn:hover {
+    background: var(--text-color-white);
+    color: var(--primary-color-black-green);
+}
+
+/* =================================================== Header =================================================== */
+.header {
+    font-family: "Public Sans", sans-serif;
+    position: sticky;
+    top: -7px;
+    z-index: 3;
+}
+
+.header-wrap {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0 13px;
+
+}
+
+.header-wrap::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    content: "";
+    width: 1140px;
+    height: 1px;
+    background: linear-gradient(90deg, #FFF 0%, #DDDCDC 51.09%, rgba(212, 212, 212, 0.00) 99.68%);
+
+}
+
+.nav {
+    margin-left: 400px;
+}
+
+.navlist {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* column-gap: 38px; */
+}
+
+.nav__item-link {
+    position: relative;
+    color: var(--text-color-back-gray);
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.55;
+    padding: 8px 19px;
+    /* 155.556% */
+}
+
+.nav__item-link:hover {
+    color: var(--primary-color-black);
+}
+
+.nav__item:hover .nav__item-link::after {
+    position: absolute;
+    bottom: -22px;
+    left: 19px;
+    content: "";
+    display: block;
+    width: 16px;
+    height: 2px;
+    background: var(--primary-color-black-green)
+}
