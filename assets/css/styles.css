@@ -574,7 +574,7 @@ article:hover .inner-img {
 }
 
 .media__content:hover {
-    background: #7aa7a1;
+    background: #c6ddda;
 
 }
 
@@ -752,4 +752,127 @@ article:hover .inner-img {
     font-weight: 500;
     line-height: 1.71;
     /* 171.429% */
+}
+
+/* =================================================== process =================================================== */
+
+.process {
+    padding: 40px;
+}
+
+.process-wrap {
+    padding-top: 36px;
+}
+
+.process__heading-h2 {
+    margin-top: 20px;
+    position: relative;
+    width: 520px;
+}
+
+.process__heading-h2::after {
+    position: absolute;
+    bottom: 21px;
+    right: 38px;
+    display: inline-block;
+    content: "";
+    width: 66px;
+    height: 2px;
+    background: var(--primary-color-black);
+}
+
+.process__list {
+    margin-top: 81px;
+}
+
+.process__item {
+    position: relative;
+    height: 185px;
+    /* padding: 55px 40px 30px 30px; */
+    padding: 0 40px 0 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 33px;
+}
+
+.process__item:hover {
+    background: #E2EDDF;
+}
+
+.process__item:hover .process__line {
+    display: none;
+}
+
+.process__item:hover .process__link {
+    display: block;
+}
+
+.process__order {
+    width: 100px;
+    margin-right: 67px;
+    color: var(--primary-color-black-green);
+    /* Heading/H1 72px bold */
+    font-size: 7.2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 0.72;
+    /* 72.222% */
+}
+
+.process__title {
+    color: var(--primary-color-black);
+    /* Heading/h1 22px semibold */
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1;
+    /* 100% */
+}
+
+.process__name {
+    position: relative;
+    width: 20%;
+}
+
+.process__link {
+    padding: 8px 16px;
+    position: absolute;
+    left: -16px;
+    bottom: -40px;
+    display: none;
+    color: var(--text-color-back-gray);
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1;
+    text-decoration: underline;
+    /* 100% */
+}
+
+.process__desc {
+    width: 572px;
+    color: var(--text-color-light-gray);
+    margin-left: auto;
+    /* Paragraph/h2 18px medium */
+    font-family: "Public Sans";
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.55;
+    /* 155.556% */
+}
+
+.process__line {
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 1131px;
+    height: 3px;
+    background: linear-gradient(180deg, #83A17D 4.17%, rgba(131, 161, 125, 0.00) 36.46%);
+}
+
+.process__img {
+    position: absolute;
+    right: 60px;
+    bottom: 0;
+    width: 450px;
+    height: 444px;
 }
