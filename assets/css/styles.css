@@ -87,6 +87,7 @@ a {
 
 /* .section__title */
 .section__title {
+    padding-left: 5px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -757,7 +758,7 @@ article:hover .inner-img {
 /* =================================================== process =================================================== */
 
 .process {
-    padding: 40px;
+    padding: 40px 0;
 }
 
 .process-wrap {
@@ -875,4 +876,118 @@ article:hover .inner-img {
     bottom: 0;
     width: 450px;
     height: 444px;
+}
+
+/* =================================================== feature =================================================== */
+.feature {
+    margin-top: 100px;
+    padding: 116px 130px 63px;
+    background: var(--primary-color-black-green);
+}
+
+/* feature__content */
+.feature__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.feature__heading-h2 {
+    position: relative;
+    width: 40%;
+    color: #E7F9F9;
+
+}
+
+.feature__heading-h2::after {
+    position: absolute;
+    bottom: 20px;
+    right: 100px;
+    content: "";
+    width: 66px;
+    height: 2px;
+    background: #83A17D;
+
+}
+
+.feature__sub-content {
+    width: 52%;
+}
+
+
+.feature__desc {
+    color: #6A8383;
+    /* Paragraph/h2 18px medium */
+    font-family: "Public Sans";
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.55;
+    /* 155.556% */
+}
+
+.feature__action {
+    /* background: orange; */
+    padding: 13px;
+    margin-left: -13px;
+    margin-bottom: -13px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+.feature__action:hover .feature__btn {
+    color: #00fff2;
+}
+
+.feature__action--title {
+    color: #FFF;
+    /* Paragraph/h2 18px medium */
+    font-family: "Public Sans";
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.55;
+    /* 155.556% */
+}
+
+.feature__btn {
+    display: inline-block;
+    color: #80A07B;
+    margin-left: 10px;
+    padding: 8px 16px;
+}
+
+
+
+/* feature__media */
+.feature__media {
+    position: relative;
+    margin-top: 70px;
+    width: 1140px;
+    height: 544px;
+    border-radius: 22px;
+}
+
+.media__action {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 118px;
+    height: 118px;
+    border-radius: 50%;
+    color: #fff;
+    background: #0f131398;
+}
+
+.button-play {
+    transition: 0.25s;
+}
+
+.media__action:hover .button-play {
+    scale: 1.2;
 }
