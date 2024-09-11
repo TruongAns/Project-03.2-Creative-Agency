@@ -1034,7 +1034,7 @@ article:hover .inner-img {
 }
 
 .service-item:nth-of-type(2) {
-    align-self: flex-start;
+    /* align-self: flex-start; */
 }
 
 .service-item {
@@ -1043,11 +1043,14 @@ article:hover .inner-img {
     border-radius: 160px;
     border: 1.5px solid #CECECE;
     padding: 60px 43px;
+    transition: 0.25s;
 }
 
 .service-item:hover {
+    transform: translateY(-59px);
     box-shadow: 0px 36px 100px 0px rgba(111, 120, 111, 0.20);
     border: 1.5px solid #fff;
+
 }
 
 .service-2__title {
