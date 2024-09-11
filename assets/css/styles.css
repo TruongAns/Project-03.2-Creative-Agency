@@ -2,11 +2,11 @@
 /*   font-family: "Public Sans", sans-serif; */
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
     font-size: 1.6rem;
-    height: 10000px;
 }
 
 * {
@@ -406,7 +406,7 @@ a {
 /* =================================================== Service =================================================== */
 
 .service {
-    margin: 56px 0 100px;
+    margin-top: 56px;
 }
 
 .service-wrap {
@@ -538,7 +538,7 @@ article:hover .inner-img {
 /* =================================================== about =================================================== */
 
 .about {
-    padding: 50px 0 40px;
+    padding: 150px 0 40px;
 }
 
 .about-wrap {
@@ -1088,8 +1088,7 @@ article:hover .inner-img {
 /* =================================================== Blog =================================================== */
 
 .blog {
-    margin-top: 104px;
-    padding: 40px 0;
+    padding: 104px 0 40px 0;
 }
 
 .blog__item {
@@ -1260,7 +1259,7 @@ article:hover .inner-img {
 .email__input {
 
     color: #6A8383;
-    margin-right: 20px;
+    margin-right: 15px;
     /* Heading/h1 22px semibold */
     font-family: Poppins;
     font-size: 2.2rem;
@@ -1271,6 +1270,7 @@ article:hover .inner-img {
     background: none;
     /* 100% */
 }
+
 
 .email__action {
     color: #fff;
